@@ -1,0 +1,65 @@
+/* ===== General Page Style ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9c97a; /* light orange background */
+}
+
+/* ===== Wrapper for the whole layout ===== */
+.wrapper {
+  width: 900px;               /* fixed width layout */
+  background-color: white;    /* white content area */
+  margin: 20px auto;          /* center the page horizontally */
+  border: 1px solid #d3a74b;  /* thin outer border */
+}
+
+/* ===== Header & Footer ===== */
+header, footer {
+  background-color: white;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #d3a74b; /* line separator */
+}
+
+footer {
+  border-top: 1px solid #d3a74b;
+  border-bottom: none;
+}
+
+/* ===== Main Flexbox Container ===== */
+.container {
+  display: flex;                /* enable Flexbox layout */
+  background-color: white;
+  min-height: 300px;            /* height for the content area */
+  border-top: 1px solid #d3a74b;
+  border-bottom: 1px solid #d3a74b;
+}
+
+/* ===== Left and Right Sidebars ===== */
+.sidebar {
+  width: 180px;                 /* fixed width for sidebars */
+  border-right: 1px solid #d3a74b; 
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* ===== Right Sidebar (no right border, add left instead) ===== */
+.sidebar.right {
+  border-right: none;
+  border-left: 1px solid #d3a74b;
+}
+
+/* ===== Main Content Area ===== */
+.main {
+  flex: 1;                      /* take up remaining space */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* ===== Headings Style ===== */
+h2, h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
